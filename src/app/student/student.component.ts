@@ -11,11 +11,17 @@ import { Student } from './student.model'
 export class StudentComponent implements OnInit {
 
   @Input() student: Student
-  @Input() titulo: string
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  clicked(): void {
+    console.log(`Student clicked is ${this.student.name}`)
+  }
+
+  goDescription(): void {
+    this.description.focus()
   }
 
 }
