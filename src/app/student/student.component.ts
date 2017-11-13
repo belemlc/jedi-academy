@@ -21,7 +21,7 @@ export class StudentComponent implements OnInit {
   }
 
   goDescription(): void {
-    this.description.focus()
+    this.description.focus
   }
 
 }
